@@ -16,7 +16,8 @@ import java.util.List;
  * }
  */
 class Solution {
-    public ListNode reverseList(ListNode head) {
+    // 1. 迭代法
+    public ListNode reverseList1(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
         ListNode nex = null;
@@ -28,6 +29,18 @@ class Solution {
         }
         return pre;
     }
+
+    // 2. 递归
+    public ListNode reverseList(ListNode head){
+        if(head == null || head.next == null){
+            return head;
+        }
+        ListNode p = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
+    }
+
 }
 // @lc code=end
 
