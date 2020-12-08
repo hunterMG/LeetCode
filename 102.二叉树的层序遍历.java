@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.swing.tree.TreeNode;
-
 /*
  * @lc app=leetcode.cn id=102 lang=java
  *
