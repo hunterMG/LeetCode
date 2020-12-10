@@ -17,6 +17,7 @@ import java.util.List;
  */
 class Solution {
     // 1. 每次新节点从已排序链表的head开始，寻找插入位置
+    // 时间：O(n^2) 空间：O(1)
     public ListNode insertionSortList_0(ListNode head) {
         if(head == null || head.next == null){
             return head;
@@ -80,6 +81,7 @@ class Solution {
     }
     //3. 官方解法：一直向后看直到遇到需要排序的才开始排序，相比1，2:
     // 比如在 [1,2,3, 5,0,9]，在前3个元素已排好序的情况下，解法1、2还是会从头开始找5的插入位置，而该解法直接跳过了。
+    // 时间：O(n^2) 空间：O(1)
     public ListNode insertionSortList(ListNode head) {
         if(head == null || head.next == null){
             return head;
