@@ -47,7 +47,7 @@ class Solution {
     /**
      * 如果end元素在set中，就删除set中的start元素，右移start指针，直到不重复
      * 如果end元素不在set中，将其加入set，计算最大长度 （end-start+1）,右移end指针
-     * 时间复杂度 O(n), 空间复杂度O
+     * 时间复杂度 O(n), 空间复杂度O(n)
      */
     public int lengthOfLongestSubstring2(String s) {
         int len = s.length();
